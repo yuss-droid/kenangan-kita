@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi Kita</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        :root {
+            --primary-blue: #007bff;
+            --bg-blue: #eef2f7;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: var(--bg-blue);
+            overflow-x: hidden;
+        }
+
+        /* Header & Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            padding: 80px 20px 40px;
+            text-align: center;
+            color: white;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .hero p { opacity: 0.9; margin-bottom: 20px; }
+        
+        .btn-mulai {
+            background: var(--white);
+            color: var(--primary-blue);
+            padding: 10px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Slider 3D Dokumentasi Kita */
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 250px;
+            height: 350px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Trending Photos Section */
+        .trending-section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .trending-section h2 {
+            color: #333;
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+        }
+
+        .trending-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        /* Card Photo Trending */
+        .trending-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .card-stats {
+            display: flex;
+            gap: 15px;
+            font-size: 0.8rem;
+            color: #555;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>Dokumentasi Kita</h1>
+        <p>Abadikan Setiap Momen Di Website Bucin</p>
+        <a href="#trending" class="btn-mulai">Mulai</a>
+    </section>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="foto 1.jpg" alt="Memory 1"></div>
+            <div class="swiper-slide"><img src="foto 2.jpg" alt="Memory 2"></div>
+            <div class="swiper-slide"><img src="foto 3.jpg" alt="Memory 3"></div>
+            <div class="swiper-slide"><img src="foto 4.jpg" alt="Memory 4"></div>
+            <div class="swiper-slide"><img src="foto 5.jpg" alt="Memory 5"></div>
+            <div class="swiper-slide"><img src="foto 6.jpg" alt="Memory 6"></div>
+            <div class="swiper-slide"><img src="foto 7.jpg" alt="Memory 7"></div>
+            <div class="swiper-slide"><img src="foto 8.jpg" alt="Memory 8"></div>
+            <div class="swiper-slide"><img src="foto 9.jpg" alt="Memory 9"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="trending-section" id="trending">
+        <h2>🔥 Trending Photos</h2>
+    <div class="trending-grid">
+    <div class="trending-card">
+        <img src="foto 8.jpg" class="card-img" alt="Karanggongso Date">
+        <div class="card-content">
+            <div class="card-title">Karanggongso Date</div>
+            <div class="card-desc">Keseruan di Pantai Karanggongso bersama kesayangan.</div>
+            <div class="card-stats">
+                <span>❤️ 150K</span>
+                <span>💬 2.5K</span>
+                <span>✈️ 924K</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="trending-card">
+        <img src="foto 9.jpg" class="card-img" alt="Hari Raya">
+        <div class="card-content">
+            <div class="card-title">Hari Raya</div>
+            <div class="card-desc">Bukan cuma opor yang spesial, tapi momen kita di hari raya ini jauh lebih spesial.</div>
+            <div class="card-stats">
+                <span>❤️ 120K</span>
+                <span>💬 1.8K</span>
+                <span>✈️ 500K</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="trending-card">
+        <img src="foto 3.jpg" class="card-img" alt="Coffee Date">
+        <div class="card-content">
+            <div class="card-title">Foto Studio</div>
+            <div class="card-desc">Definisi bahagia yang tertangkap lensa dalam satu ruangan.</div>
+            <div class="card-stats">
+                <span>❤️ 95K</span>
+                <span>💬 1.2K</span>
+                <span>✈️ 300K</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="trending-card">
+        <img src="foto 4.jpg" class="card-img" alt="Night Drive">
+        <div class="card-content">
+            <div class="card-title">Maulid Nabi</div>
+            <div class="card-desc">Merayakan Maulid Nabi, semoga cinta kita selalu dalam tuntunan dan rida-Nya.</div>
+            <div class="card-stats">
+                <span>❤️ 210K</span>
+                <span>💬 4.5K</span>
+                <span>✈️ 1.2M</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <p>© kenangan kita ❤</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>
