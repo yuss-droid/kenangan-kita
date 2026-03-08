@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="qZJV81yJEr_-gEm4piQfToDHOWS9NO5YKtVFcpjtpQQ" />
     <title>Dokumentasi Kita</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         :root {
-            --primary-blue: #007bff;
-            --bg-blue: #eef2f7;
+            --primary-purple: #9b59b6; 
+            --dark-purple: #4b0082;    
+            --black: #121212;          
+            --dark-grey: #1e1e1e;      
             --white: #ffffff;
         }
 
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
-            background-color: var(--bg-blue);
+            background-color: var(--black);
+            color: var(--white);
             overflow-x: hidden;
         }
 
         /* Header & Hero Section */
         .hero {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(135deg, var(--dark-purple) 0%, var(--black) 100%);
             padding: 80px 20px 40px;
             text-align: center;
             color: white;
@@ -33,13 +37,19 @@
         .hero p { opacity: 0.9; margin-bottom: 20px; }
         
         .btn-mulai {
-            background: var(--white);
-            color: var(--primary-blue);
+            background: var(--primary-purple);
+            color: var(--white);
             padding: 10px 30px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(155, 89, 182, 0.4);
+            transition: 0.3s;
+        }
+
+        .btn-mulai:hover {
+            background: var(--white);
+            color: var(--dark-purple);
         }
 
         /* Slider 3D Dokumentasi Kita */
@@ -55,7 +65,7 @@
             width: 250px;
             height: 350px;
             border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
             overflow: hidden;
         }
 
@@ -73,9 +83,10 @@
         }
 
         .trending-section h2 {
-            color: #333;
+            color: var(--primary-purple);
             margin-bottom: 25px;
             font-size: 1.5rem;
+            text-align: center;
         }
 
         .trending-grid {
@@ -86,10 +97,16 @@
 
         /* Card Photo Trending */
         .trending-card {
-            background: white;
+            background: var(--dark-grey);
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .trending-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(155, 89, 182, 0.3);
         }
 
         .card-img {
@@ -106,27 +123,30 @@
             font-weight: bold;
             font-size: 1.1rem;
             margin-bottom: 5px;
+            color: var(--primary-purple);
+            text-transform: capitalize;
         }
 
         .card-desc {
-            font-size: 0.9rem;
-            color: #777;
+            font-size: 0.85rem;
+            color: #bbb;
             margin-bottom: 15px;
+            line-height: 1.4;
         }
 
         .card-stats {
             display: flex;
             gap: 15px;
             font-size: 0.8rem;
-            color: #555;
-            border-top: 1px solid #eee;
+            color: var(--primary-purple);
+            border-top: 1px solid #333;
             padding-top: 10px;
         }
 
         footer {
             text-align: center;
             padding: 40px;
-            color: #888;
+            color: #666;
             font-size: 0.9rem;
         }
     </style>
@@ -141,77 +161,79 @@
 
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="foto 1.jpg" alt="Memory 1"></div>
-            <div class="swiper-slide"><img src="foto 2.jpg" alt="Memory 2"></div>
-            <div class="swiper-slide"><img src="foto 3.jpg" alt="Memory 3"></div>
-            <div class="swiper-slide"><img src="foto 4.jpg" alt="Memory 4"></div>
-            <div class="swiper-slide"><img src="foto 5.jpg" alt="Memory 5"></div>
-            <div class="swiper-slide"><img src="foto 6.jpg" alt="Memory 6"></div>
-            <div class="swiper-slide"><img src="foto 7.jpg" alt="Memory 7"></div>
-            <div class="swiper-slide"><img src="foto 8.jpg" alt="Memory 8"></div>
-            <div class="swiper-slide"><img src="foto 9.jpg" alt="Memory 9"></div>
+            <div class="swiper-slide"><img src="1.jpg" alt="Memory 1"></div>
+            <div class="swiper-slide"><img src="2.jpg" alt="Memory 2"></div>
+            <div class="swiper-slide"><img src="3.jpg" alt="Memory 3"></div>
+            <div class="swiper-slide"><img src="4.jpg" alt="Memory 4"></div>
+            <div class="swiper-slide"><img src="5.jpg" alt="Memory 5"></div>
+            <div class="swiper-slide"><img src="6.jpg" alt="Memory 6"></div>
+            <div class="swiper-slide"><img src="7.jpg" alt="Memory 7"></div>
+            <div class="swiper-slide"><img src="8.jpg" alt="Memory 8"></div>
         </div>
         <div class="swiper-pagination"></div>
     </div>
 
     <div class="trending-section" id="trending">
         <h2>🔥 Trending Photos</h2>
-    <div class="trending-grid">
-    <div class="trending-card">
-        <img src="foto 8.jpg" class="card-img" alt="Karanggongso Date">
-        <div class="card-content">
-            <div class="card-title">Karanggongso Date</div>
-            <div class="card-desc">Keseruan di Pantai Karanggongso bersama kesayangan.</div>
-            <div class="card-stats">
-                <span>❤️ 150K</span>
-                <span>💬 2.5K</span>
-                <span>✈️ 924K</span>
+        <div class="trending-grid">
+            
+            <div class="trending-card">
+                <img src="1.jpg" class="card-img" alt="nyari takjil">
+                <div class="card-content">
+                    <div class="card-title">nyari takjil</div>
+                    <div class="card-desc">Keliling komplek demi es campur, tapi akhirnya cuma mau liat senyummu yang lebih manis.</div>
+                    <div class="card-stats">
+                        <span>❤️ 150K</span>
+                        <span>💬 2.5K</span>
+                        <span>✈️ 924K</span>
+                    </div>
+                </div>
             </div>
+
+            <div class="trending-card">
+                <img src="8.jpg" class="card-img" alt="Buka Bersama">
+                <div class="card-content">
+                    <div class="card-title">Buka Bersama</div>
+                    <div class="card-desc">Manisnya kurma masih kalah dengan hangatnya suasana buka puasa bersamamu.</div>
+                    <div class="card-stats">
+                        <span>❤️ 120K</span>
+                        <span>💬 1.8K</span>
+                        <span>✈️ 500K</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending-card">
+                <img src="3.jpg" class="card-img" alt="Coffe Date">
+                <div class="card-content">
+                    <div class="card-title">Coffe Date</div>
+                    <div class="card-desc">Menghabiskan waktu sore dengan secangkir kopi dan obrolan tanpa ujung.</div>
+                    <div class="card-stats">
+                        <span>❤️ 210K</span>
+                        <span>💬 3.2K</span>
+                        <span>✈️ 850K</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending-card">
+                <img src="4.jpg" class="card-img" alt="Sekolah">
+                <div class="card-content">
+                    <div class="card-title">Masa Sekolah</div>
+                    <div class="card-desc">Di antara barisan bangku dan papan tulis, ada cerita kita yang takkan pernah habis.</div>
+                    <div class="card-stats">
+                        <span>❤️ 340K</span>
+                        <span>💬 5.1K</span>
+                        <span>✈️ 1.2M</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-
-    <div class="trending-card">
-        <img src="foto 9.jpg" class="card-img" alt="Hari Raya">
-        <div class="card-content">
-            <div class="card-title">Hari Raya</div>
-            <div class="card-desc">Bukan cuma opor yang spesial, tapi momen kita di hari raya ini jauh lebih spesial.</div>
-            <div class="card-stats">
-                <span>❤️ 120K</span>
-                <span>💬 1.8K</span>
-                <span>✈️ 500K</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="trending-card">
-        <img src="foto 3.jpg" class="card-img" alt="Coffee Date">
-        <div class="card-content">
-            <div class="card-title">Foto Studio</div>
-            <div class="card-desc">Definisi bahagia yang tertangkap lensa dalam satu ruangan.</div>
-            <div class="card-stats">
-                <span>❤️ 95K</span>
-                <span>💬 1.2K</span>
-                <span>✈️ 300K</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="trending-card">
-        <img src="foto 4.jpg" class="card-img" alt="Night Drive">
-        <div class="card-content">
-            <div class="card-title">Maulid Nabi</div>
-            <div class="card-desc">Merayakan Maulid Nabi, semoga cinta kita selalu dalam tuntunan dan rida-Nya.</div>
-            <div class="card-stats">
-                <span>❤️ 210K</span>
-                <span>💬 4.5K</span>
-                <span>✈️ 1.2M</span>
-            </div>
-        </div>
-    </div>
-</div>
-
+    
     <footer>
-        <p>© kenangan kita ❤</p>
+        <p>© 2026 kenangan bersama pacar ❤️</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
